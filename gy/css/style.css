@@ -2,7 +2,7 @@
 * @Author: huangdeyaosi
 * @Date:   2018-01-26 09:09:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-14 16:14:01
+* @Last Modified time: 2019-05-14 16:19:03
 */
 @charset "UTF-8";
 body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, button, input, textarea, th, td, p {
@@ -2705,6 +2705,18 @@ button {
   padding-left: 0.37rem;
   box-sizing: border-box;
   font-size: 0.24rem;
+}
+.dlzcbox  .shequ{
+  display: block;
+  width: 5.9rem;
+  line-height: 0.56rem;
+  border: 0.02rem solid #c9c9c9;
+  border-radius: 0.08rem;
+  margin: 0 auto;
+  padding-left: 0.37rem;
+  box-sizing: border-box;
+  font-size: 0.24rem;
+  cursor: pointer;
 }
 .dlzcbox  .btn{
   width: 5.34rem;
