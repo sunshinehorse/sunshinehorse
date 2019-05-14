@@ -1,13 +1,166 @@
 /*
-* @Author: Administrator
-* @Date:   2019-05-14 15:01:22
+* @Author: ml
+* @Date:   2018-01-26 09:09:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-14 15:04:06
+* @Last Modified time: 2019-05-14 15:08:34
 */
-*{
-	padding: 0;
-	margin: 0;
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, button, input, textarea, th, td, p {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+ul, ol {
+  list-style: none; 
 }
+
+input, select, textarea, button {
+  background: transparent;
+  border: none;
+  outline: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important; }
+
+textarea {
+  resize: none; }
+
+img {
+  vertical-align: top; }
+
+/* 清楚图片底部三像素 */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit; }
+
+i, em {
+  font-style: normal; }
+
+html {
+  -webkit-text-size-adjust: none;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+html, body, input, textarea {
+  font-family: "Helvetica","Arial","PingFang SC","Microsoft YaHei",sans-serif; }
+html{height:100%;}
+body{min-height:100%;margin:0;padding:0;position:relative;}
+.o1 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.o2 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.o3 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.o4 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; }
+
+.o5 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical; }
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: 0 none;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+
+.fb {
+  font-weight: bold; }
+
+.t2 {
+  text-indent: 2em; }
+
+.t1 {
+  text-indent: 1em; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.td {
+  text-decoration: underline; }
+
+.f24 {
+  font-size: 24px; }
+
+.none {
+  display: none; }
+
+.qblue {
+  background-color: #4f9fda; }
+
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+.pf {
+  position: fixed; }
+
+.italic {
+  position: absolute;
+  width: 100%;
+  z-index: 999; 
+  bottom: 0; }
+
+.plate {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.fb {
+  font-weight: bold; }
+
+.none {
+  display: none; }
 .banner img{
 	display: block;
 	width: 100%;
