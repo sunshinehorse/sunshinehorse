@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>公益平台</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<script src="js/resize.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="editcenter">
+			<div class="edit">
+				<div class="head">
+					<div class="name">
+						头像
+					</div>
+					<div class="sc">
+						<input type="file">
+					</div>
+					<img src="" alt="" title="">
+				</div> 
+				<div class="nicheng">
+					<div class="name">
+						昵称
+					</div>
+					<input type="text" placeholder="输入昵称">
+				</div>
+				<div class="sex">
+					<div class="name">
+						性别
+					</div>
+					<div class="radio">
+						<input type="radio" name="cc" value="男" checked="checked" />男
+						<input type="radio" name="cc" value="女" />女
+					</div>
+				</div>
+				<div class="zuzhi">
+					<div class="name">
+						所属组织
+					</div>
+					<input type="text" placeholder="输入组织名称">
+				</div>
+				<div class="biaoqian">
+					<div class="name">
+						填写标签
+					</div>
+					<textarea placeholder="填写与服务项目相关标签,最多可填写3个"></textarea>
+				</div>
+				<button>
+					保存
+				</button>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script>
+		$(".editcenter .edit .head").on('change', 'input[type="file"]', function() {
+					$('.editcenter .edit .head .sc').css({
+						zIndex: '0'
+					});
+					$('.editcenter .edit .head img').css({
+						opacity: '1'
+					});
+					var file = this.files[0];
+					if (window.FileReader) {
+					var reader = new FileReader();
+					reader.readAsDataURL(file);
+					//监听文件读取结束后事件
+					reader.onloadend = function (e) {
+					$(".editcenter .edit .head img").attr("src",e.target.result);    //e.target.result就是最后的路径地址
+					$(".editcenter .edit .head img").attr("value",e.target.result);    //e.target.result就是最后的路径地址
+					};
+				}
+				});
+		</script>
+
+	</body>
+</html>

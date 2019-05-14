@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>公益平台</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<script src="js/resize.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="renwuup">
+			<div class="shangchuan">
+				<div class="download">
+					<a href="#" title="">点击此处下载验收证明<img src="images/gb.png" alt="" title=""></a>
+				</div>
+				<div class="yanshou">
+					<div class="name">
+						上传验收证明
+					</div>
+					<div class="djsc">
+						<img src="images/gongao.png" alt="" title="">
+						<div class="file">
+							<input type="file" class="">
+							点击上传
+						</div>
+						<div class="scimg">
+							<img src="images/" alt="" title="">
+							<div class="guanbi">
+								x
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="photo">
+					<div class="name">
+						上传照片证明
+					</div>
+					<div class="djsc">
+						<img src="images/gongao.png" alt="" title="">
+						<div class="file">
+							<input type="file" class="">
+							点击上传
+						</div>
+						<div class="scimg">
+							<img src="images/" alt="" title="">
+							<div class="guanbi">
+								x
+							</div>
+						</div>
+					</div>
+				</div>
+				<button>提交</button>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script>
+		$(".renwuup .yanshou").on('change', 'input[type="file"]', function() {
+					$('.renwuup .shangchuan .yanshou .scimg').css({
+						zIndex: '10'
+					});
+					$(".renwuup .shangchuan .yanshou .guanbi").css({
+						display: 'block'
+					});
+					$(".renwuup .shangchuan .yanshou .scimg").on('click', '.guanbi', function() {
+						$(".yanshou .scimg img").attr("src","");
+						$(".yanshou .scimg img").attr("value","");
+						$(this).css({
+							display: 'none'
+						});
+						$('.yanshou  .scimg').css({
+						zIndex: '0'
+					});
+				});
+					var file = this.files[0];
+					if (window.FileReader) {
+					var reader = new FileReader();
+					reader.readAsDataURL(file);
+					//监听文件读取结束后事件
+					reader.onloadend = function (e) {
+						console.log(e.target.result);
+					$(".yanshou .scimg  img").attr("src",e.target.result);    //e.target.result就是最后的路径地址
+					$(".yanshou .scimg  img").attr("value",e.target.result);    //e.target.result就是最后的路径地址
+					};
+				}
+				});
+		$(".renwuup .photo").on('change', 'input[type="file"]', function() {
+					$('.renwuup .shangchuan .photo .scimg').css({
+						zIndex: '10'
+					});
+					$(".renwuup .shangchuan .photo .guanbi").css({
+						display: 'block'
+					});
+					$(".renwuup .shangchuan .photo .scimg").on('click', '.guanbi', function() {
+						$(".photo .scimg img").attr("src","");
+						$(".photo .scimg img").attr("value","");
+						$(this).css({
+							display: 'none'
+						});
+						$('.photo  .scimg').css({
+						zIndex: '0'
+					});
+				});
+					var file = this.files[0];
+					if (window.FileReader) {
+					var reader = new FileReader();
+					reader.readAsDataURL(file);
+					//监听文件读取结束后事件
+					reader.onloadend = function (e) {
+						console.log(e.target.result);
+					$(".photo .scimg  img").attr("src",e.target.result);    //e.target.result就是最后的路径地址
+					$(".photo .scimg  img").attr("value",e.target.result);    //e.target.result就是最后的路径地址
+					};
+				}
+				});
+		</script>
+
+	</body>
+</html>

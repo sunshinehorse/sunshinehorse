@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>公益平台</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<script src="js/resize.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="fabuye">
+			<div class="tab clearfix">
+				<a href="#" title="" >发布任务</a>
+				<a href="#" title="" class="active">发布商品</a>
+			</div>
+			<div class="fbxsp active">
+				<div class="fabulan">
+					<span>发布商品很受欢迎,快来发布新的商品吧!</span>
+					<div class="fabunew">
+						<a href="#" title="">发布新商品</a>
+					</div>
+				</div>
+				<div class="fabulist">
+					<ul>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13 <span>审核中</span></div>
+									<div class="name">这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13 <span  class="active">审核通过</span></div>
+									<div class="name">这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13</div>
+									<div class="name">这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13</div>
+									<div class="name">这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="pages">
+						<div class="pre">
+							<a href="#" title="">上一页</a>
+						</div>
+						<div class="next">
+							<a href="#" title="">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fbxrw">
+				<div class="fabulan">
+					<span>发布任务很受欢迎,快来发布新的任务吧!</span>
+					<div class="fabunew">
+						<a href="#" title="">发布新任务</a>
+					</div>
+				</div>
+				<div class="fabulist">
+					<ul>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13 <span>审核中</span></div>
+									<div class="name">这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13 <span  class="active">审核通过</span></div>
+									<div class="name">这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称这是之前发布的商品名称</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13</div>
+									<div class="name">这是之前发布的任务名称这是之前发布的任务名称这是之前发布的任务名称这是之前发布的任务名称这是之前发布的任务名称</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="">
+								<div class="img">
+									<img src="images/daosanjiao.png" alt="" title="">
+								</div>
+								<div class="riqiname">
+									<div class="date">2017-12-13</div>
+									<div class="name">这是之前发布的任务名称这是之前发布的任务名称这是之前发布的任务名称这是之前发布的任务名称这是之前发布的任务名称</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="pages">
+						<div class="pre">
+							<a href="#" title="">上一页</a>
+						</div>
+						<div class="next">
+							<a href="#" title="">下一页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script>
+			$(function(){
+				$(document).on('click', '.tab a', function() {
+					var index = $(this).index();
+					$(this).addClass('active').siblings('a').removeClass('active');
+					if(index == 0){
+						$('.fbxrw').addClass('active');
+						$('.fbxsp').removeClass('active');
+					}else{
+						$('.fbxsp').addClass('active');
+						$('.fbxrw').removeClass('active');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
