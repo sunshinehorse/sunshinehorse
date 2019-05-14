@@ -2,9 +2,12 @@
 * @Author: Administrator
 * @Date:   2019-05-14 15:01:22
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-14 15:02:01
+* @Last Modified time: 2019-05-14 15:04:06
 */
-
+*{
+	padding: 0;
+	margin: 0;
+}
 .banner img{
 	display: block;
 	width: 100%;
