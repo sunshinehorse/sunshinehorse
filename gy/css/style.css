@@ -2,7 +2,7 @@
 * @Author: huangdeyaosi
 * @Date:   2018-01-26 09:09:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-14 16:19:03
+* @Last Modified time: 2019-05-14 16:35:32
 */
 @charset "UTF-8";
 body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, button, input, textarea, th, td, p {
@@ -2643,13 +2643,13 @@ button {
   -webkit-background-size: 7.5rem 14.75rem;
   background-size: 7.5rem 14.75rem;
   background-repeat: no-repeat;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding-top: 4.43rem;
-  padding-bottom: 1rem;
+/*   padding-bottom: 1rem;
    -webkit-transition: paddingBottom .5s;
   -o-transition: paddingBottom .5s;
   -moz-transition: paddingBottom .5s;
-  transition: paddingBottom .5s; 
+  transition: paddingBottom .5s;  */
 }
 .dlzcbox .dlzcbtn{
   width: 5.84rem;
@@ -2706,7 +2706,7 @@ button {
   box-sizing: border-box;
   font-size: 0.24rem;
 }
-.dlzcbox  .shequ{
+.dlzcbox .shequ{
   display: block;
   width: 5.9rem;
   line-height: 0.56rem;
@@ -2733,8 +2733,21 @@ button {
   background: -moz-linear-gradient(right, #f6615b  , #fead51); /* Firefox 3.6 - 15 */
   background: linear-gradient(to right, #f6615b  , #fead51); /* 标准的语法 */
 }
+.mb{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 888;
+  display: none;
+}
+.mb.active{
+  display: block;
+}
 .dlzcbox .tanchu{
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -2743,22 +2756,25 @@ button {
   -o-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s; 
+  z-index: 999;
 }
 .dlzcbox .tanchu.active{
   display: block;
 }
 .dlzcbox .tanchu .place{
-  font-size: 0.24rem;
+  font-size: 0.3rem;
   line-height: 0.52rem;
   text-align: center;
   font-family: SimHei;
   position: relative;
+  color: #fff;
 }
 .dlzcbox .tanchu .place .wancheng{
   position: absolute;
   right: 0.82rem;
   top: 0;
-  color: #5138ca;
+  color: #269cf1;
+  font-size: 0.26rem;
 }
 .dlzcbox .tanchu .gundong{
   background: #f5f5f5;
