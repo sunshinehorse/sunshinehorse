@@ -2,7 +2,7 @@
 * @Author: huangdeyaosi
 * @Date:   2018-01-26 09:09:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-14 16:35:32
+* @Last Modified time: 2019-05-16 09:28:06
 */
 @charset "UTF-8";
 body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, button, input, textarea, th, td, p {
@@ -2634,22 +2634,22 @@ button {
   width: 5.6rem;
 }
 .dlzcbox{
-/*   position: absolute;
+  position: absolute;
   left: 0;
-  top: 0; */
+  top: 0;
   width: 100%;
-  /* min-height: 100%; */
+  min-height: 100%;
   background-image: url('../images/dlzcbg.png');
   -webkit-background-size: 7.5rem 14.75rem;
   background-size: 7.5rem 14.75rem;
   background-repeat: no-repeat;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   padding-top: 4.43rem;
-/*   padding-bottom: 1rem;
+  padding-bottom: 1rem;
    -webkit-transition: paddingBottom .5s;
   -o-transition: paddingBottom .5s;
   -moz-transition: paddingBottom .5s;
-  transition: paddingBottom .5s;  */
+  transition: paddingBottom .5s; 
 }
 .dlzcbox .dlzcbtn{
   width: 5.84rem;
@@ -2706,18 +2706,6 @@ button {
   box-sizing: border-box;
   font-size: 0.24rem;
 }
-.dlzcbox .shequ{
-  display: block;
-  width: 5.9rem;
-  line-height: 0.56rem;
-  border: 0.02rem solid #c9c9c9;
-  border-radius: 0.08rem;
-  margin: 0 auto;
-  padding-left: 0.37rem;
-  box-sizing: border-box;
-  font-size: 0.24rem;
-  cursor: pointer;
-}
 .dlzcbox  .btn{
   width: 5.34rem;
   height: 0.8rem;
@@ -2733,21 +2721,8 @@ button {
   background: -moz-linear-gradient(right, #f6615b  , #fead51); /* Firefox 3.6 - 15 */
   background: linear-gradient(to right, #f6615b  , #fead51); /* 标准的语法 */
 }
-.mb{
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 888;
-  display: none;
-}
-.mb.active{
-  display: block;
-}
 .dlzcbox .tanchu{
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -2756,25 +2731,22 @@ button {
   -o-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s; 
-  z-index: 999;
 }
 .dlzcbox .tanchu.active{
   display: block;
 }
 .dlzcbox .tanchu .place{
-  font-size: 0.3rem;
+  font-size: 0.24rem;
   line-height: 0.52rem;
   text-align: center;
   font-family: SimHei;
   position: relative;
-  color: #fff;
 }
 .dlzcbox .tanchu .place .wancheng{
   position: absolute;
   right: 0.82rem;
   top: 0;
-  color: #269cf1;
-  font-size: 0.26rem;
+  color: #5138ca;
 }
 .dlzcbox .tanchu .gundong{
   background: #f5f5f5;
@@ -2911,4 +2883,213 @@ button {
   font-size: 0.22rem;
   line-height: 0.4rem;
   text-align: center;
+}
+
+
+/* 新版 */
+.new_version{
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #f5f7f9;
+}
+.r_form{
+  width: 6.4rem;
+  margin: 0 auto;
+  padding-top: 0.6rem;
+}
+.r_form .flex{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.r_form .flex .radius{
+  width: 3.16rem;
+  line-height: 0.84rem;
+  font-size: 0.32rem;
+  color: #aeaeae;
+  text-align: center;
+  border-top-left-radius: 0.16rem;
+  border-top-right-radius: 0.16rem;
+  overflow: hidden;
+  background-color: #fae6e5;
+}
+.r_form .flex .radius.active{
+  background-color: #dd302e;
+  color: #fff;
+}
+.r_form .flex .radius a{
+  display: block;
+}
+.r_form .form{
+  padding: 0 0.5rem;
+  background-color: #fff;
+  border-bottom-left-radius: 0.16rem;
+  border-bottom-right-radius: 0.16rem;
+}
+.r_form .form .name{
+  padding-top: 0.22rem;
+  line-height: 0.64rem;
+  font-size: 0.3rem;
+  color: #333333;
+}
+.r_form .form i{
+  color: #ff0000;
+}
+.r_form .form .inp{
+  position: relative;
+}
+.r_form .form .inp input{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0.6rem;
+  border: 0.02rem solid #dcdcdc;
+  border-radius: 0.04rem;
+  padding: 0 0.18rem;
+  font-size: 0.24rem;
+  color: #000;
+}
+input::-webkit-input-placeholder {
+color: #aeaeae;
+}
+.r_form .form .inp .getCode{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.24rem;
+  color: #dd302e;
+  width: 1.64rem;
+  line-height: 0.6rem;
+  border-left: 0.02rem solid #dcdcdc;
+  cursor: pointer;
+  text-align: center;
+}
+.r_form .form .inp .val{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border: 0.02rem solid #dcdcdc;
+  border-radius: 0.04rem;
+  padding: 0 0.18rem;
+  color: #aeaeae;
+  font-size: 0.24rem;
+}
+.r_form .form .xuzhi{
+  font-size: 0.24rem;
+  color: #dd302e;
+  line-height: 1.02rem;
+  text-decoration: underline;
+}
+.r_form .form .xuzhi i{
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  border: 0.02rem solid #dd302e;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+.r_form .form .xuzhi i.checked{
+  background-color: #dd302e;
+  background-image: url('../images/sure.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 0.2rem 0.16rem;
+  background-size: 0.2rem 0.16rem;
+  background-position: center center;
+} 
+.new_version .new_submit{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #dd302e;
+  font-size: 0.32rem;
+  color: #ffffff;
+}
+.mb{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 555;
+}
+.select_org{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7.5rem;
+  background-color: #fff;
+  z-index: 600;
+}
+.select_org .title{
+  line-height: 0.88rem;
+  padding: 0  0.3rem;
+  background-color: #dd302e;
+  font-size: 0.28rem;
+  color: #ffffff;
+}
+.select_org .close{
+  position: absolute;
+  right: 0;
+  top: -0.41rem;
+  width: 0.82rem;
+  height: 0.82rem;
+  background-image: url('../images/no.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.select_org .close .really{
+  width: 0.44rem;
+  height: 0.44rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.22rem;
+  margin-top: -0.24rem;
+}
+.select_org .box{
+  height: 6.42rem;
+  padding-top: 0.2rem
+}
+.select_org .box .item{
+  padding: 0.3rem 0.5rem 0;
+  font-size: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.58rem;
+}
+.select_org .box .item span{
+  font-size: 0.3rem;
+  color: #333333;
+  vertical-align: middle;
+}
+.select_org .box .item select{
+  width: 4.74rem;
+  height: 0.58rem;
+  border: 0.02rem solid #dcdcdc;
+  border-radius: 0.04rem;
+  padding-left: 0.18rem;
+  padding-right: 0.38rem;
+  appearance: none;
+
+　-webkit-appearance: none;   /*除chrome浏览器的默认下拉图片*/
+
+　-moz-appearance: none; 
 }
