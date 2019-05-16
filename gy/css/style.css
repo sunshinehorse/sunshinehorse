@@ -2,7 +2,7 @@
 * @Author: huangdeyaosi
 * @Date:   2018-01-26 09:09:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-16 09:28:06
+* @Last Modified time: 2019-05-16 09:38:18
 */
 @charset "UTF-8";
 body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, button, input, textarea, th, td, p {
@@ -53,13 +53,11 @@ html{height:100%;}
 body{min-height:100%;margin:0;padding:0;position:relative;}
 .o1 {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
 .o2 {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -67,7 +65,6 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 
 .o3 {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -75,7 +72,6 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 
 .o4 {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -83,7 +79,6 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 
 .o5 {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -223,168 +218,173 @@ button {
   padding-left: 0.34rem;
 }
 .sign .blue .signtoggle input{
-	display: block;
-	width: 5.93rem;
-	height: 0.6rem;
-	margin-left: 0.34rem;
-	background-color: #fff;
-	padding-left: 0.39rem;
-	box-sizing: border-box;
-	border-radius: 0.08rem;
+  display: block;
+  width: 5.93rem;
+  height: 0.6rem;
+  margin-left: 0.34rem;
+  background-color: #fff;
+  padding-left: 0.39rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.08rem;
 }
 .sign .purple{
   height: 6.77rem;
   background: #fcd2d6;
   padding: 0 0.3rem;
   background-image: url('../images/yiyezi.png');
-  -webkit-background-size: 7.03rem 7.27rem;
   background-size: 7.03rem 7.27rem;
   background-repeat: no-repeat;
   background-position: 0.34rem -1.56rem;
 }
 .sign .purple .signtoggle{
-	height: 3.28rem;
-	background-color: rgba(255, 255, 255, 0.1);
-	position: relative;
+  height: 3.28rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 .sign .purple .signtoggle p{
-	font-size: 0.24rem;
-	line-height: 0.52rem;
-	color: #9c888a;
-	padding-left: 0.34rem;
+  font-size: 0.24rem;
+  line-height: 0.52rem;
+  color: #9c888a;
+  padding-left: 0.34rem;
 }
 .sign .purple .signtoggle input{
-	display: block;
-	width: 3.11rem;
-	height: 0.6rem;
-	border-radius: 0.08rem;
-	padding-left: 0.39rem;
-	margin-left: 0.34rem;
-	box-sizing: border-box;
-	background-color: #fff;
+  display: block;
+  width: 3.11rem;
+  height: 0.6rem;
+  border-radius: 0.08rem;
+  padding-left: 0.39rem;
+  margin-left: 0.34rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
 }
 .sign .purple .signtoggle .img{
-	position: absolute;
-	width: 2.25rem;
+  position: absolute;
+  width: 2.25rem;
   height: 0.6rem;
-	left: 3.68rem;
-	top: 0.51rem;
-	background-color: #fff;
-	border-radius: 0.08rem;
-	text-align: center;
-	line-height: 0.6rem;
+  left: 3.68rem;
+  top: 0.51rem;
+  background-color: #fff;
+  border-radius: 0.08rem;
+  text-align: center;
+  line-height: 0.6rem;
 }
 .sign .purple .signtoggle .img img{
-	width: 2.25rem;
+  width: 2.25rem;
   height: 0.6rem;
 }
 .sign .purple .signtoggle .img a{
-	font-size: 0.2rem;
-	line-height: 0.3rem;
-	border-bottom: 0.02rem solid #000;
-	position: absolute;
-	right: -1rem;
-	bottom: 0;
+  font-size: 0.2rem;
+  line-height: 0.3rem;
+  border-bottom: 0.02rem solid #000;
+  position: absolute;
+  right: -1rem;
+  bottom: 0;
 }
 .sign .purple .signtoggle button{
   display: block;
-	width: 5.33rem;
-	height: 0.8rem;
+  width: 5.33rem;
+  height: 0.8rem;
   margin-top: 0.6rem;
-	line-height: 0.8rem;
-	margin-left: 0.73rem;
-	font-size: 0.3rem;
-	border-radius: 0.08rem;
-	background: url('../images/buttonbg.png');
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-repeat: no-repeat;
-	color: #fff;
+  line-height: 0.8rem;
+  margin-left: 0.73rem;
+  font-size: 0.3rem;
+  border-radius: 0.08rem;
+  background: url('../images/buttonbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 .sign .purple .signtoggle .shiyi{
-	width: 5.33rem;
-	padding-top: 0.12rem;
-	margin-left: 0.73rem;
+  width: 5.33rem;
+  padding-top: 0.12rem;
+  margin-left: 0.73rem;
 
 }
 .sign .purple .signtoggle .shiyi a{
-	font-size: 0.2rem;
-	line-height: 0.3rem;
-	border-bottom: 0.02rem solid #000;
-	display: block;
-	width: 1.1rem;
-	float: right;
+  font-size: 0.2rem;
+  line-height: 0.3rem;
+  border-bottom: 0.02rem solid #000;
+  display: block;
+  width: 1.1rem;
+  float: right;
 }
 .sign .purple .signtoggle1{
-	height: 4.66rem;
-	background-color: rgba(255, 255, 255, 0.1);
-	position: relative;
+  height: 4.66rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 .sign .purple .signtoggle1 p{
-	font-size: 0.24rem;
-	line-height: 0.52rem;
-	color: #9c888a;
-	padding-left: 0.34rem; 
+  font-size: 0.24rem;
+  line-height: 0.52rem;
+  color: #9c888a;
+  padding-left: 0.34rem; 
 }
 .sign .purple .signtoggle1 .password input{
-	display: block;
-	width: 5.93rem;
-	height: 0.6rem;
-	margin-left: 0.34rem;
-	background-color: #fff;
-	padding-left: 0.39rem;
-	box-sizing: border-box;
-	border-radius: 0.08rem;
+  display: block;
+  width: 5.93rem;
+  height: 0.6rem;
+  margin-left: 0.34rem;
+  background-color: #fff;
+  padding-left: 0.39rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.08rem;
 }
 .sign .purple .signtoggle1>p{
-	margin-top: 0.18rem;
+  margin-top: 0.18rem;
 }
 .sign .purple .signtoggle1>input{
-	display: block;
-	width: 3.11rem;
-	height: 0.6rem;
-	border-radius: 0.08rem;
-	padding-left: 0.39rem;
-	margin-left: 0.34rem;
-	box-sizing: border-box;
-	background-color: #fff;
+  display: block;
+  width: 3.11rem;
+  height: 0.6rem;
+  border-radius: 0.08rem;
+  padding-left: 0.39rem;
+  margin-left: 0.34rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
 }
 .sign .purple .signtoggle1 .img{
-	position: absolute;
-	width: 2.25rem;
+  position: absolute;
+  width: 2.25rem;
   height: 0.6rem;
-	left: 3.68rem;
-	top: 2.92rem;
-	background-color: #fff;
-	border-radius: 0.08rem;
-	text-align: center;
-	line-height: 0.6rem;
+  left: 3.68rem;
+  top: 2.92rem;
+  background-color: #fff;
+  border-radius: 0.08rem;
+  text-align: center;
+  line-height: 0.6rem;
 }
 .sign .purple .signtoggle1 .img img{
-	width: 2.25rem;
+  width: 2.25rem;
   height: 0.6rem;
 }
 .sign .purple .signtoggle1 .img a{
-	font-size: 0.2rem;
-	line-height: 0.3rem;
-	border-bottom: 0.02rem solid #000;
-	position: absolute;
-	right: -1rem;
-	bottom: 0;
+  font-size: 0.2rem;
+  line-height: 0.3rem;
+  border-bottom: 0.02rem solid #000;
+  position: absolute;
+  right: -1rem;
+  bottom: 0;
 }
 .sign .purple .signtoggle1 button{
   display: block;
-	width: 5.33rem;
-	height: 0.8rem;
-	line-height: 0.8rem;
-	margin-left: 0.73rem;
-	font-size: 0.3rem;
-	border-radius: 0.08rem;
-	background: url('../images/buttonbg.png');
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-repeat: no-repeat;
-	color: #fff;
+  width: 5.33rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  margin-left: 0.73rem;
+  font-size: 0.3rem;
+  border-radius: 0.08rem;
+  background: url('../images/buttonbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
   margin-top: 0.6rem;
 }
 .sign .blue .signtoggle .`{
@@ -469,7 +469,6 @@ button {
   font-size: 0.3rem;
   border-radius: 0.08rem;
   background: url('../images/buttonbg.png');
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -484,7 +483,6 @@ button {
   font-size: 0.3rem;
   border-radius: 0.08rem;
   background: url('../images/buttonbg.png');
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -522,7 +520,6 @@ button {
   height: 3.46rem;
   text-align: center;
   background-image: url('../images/bg.png');
-  -webkit-background-size: 7.1rem 3.14rem;
   background-size: 7.1rem 3.14rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -781,7 +778,8 @@ button {
   float: left;
   margin-left: 0.3rem;
   border-radius: 0.08rem;
-  box-shadow: -0.11rem 0.11rem 0.1rem #b2b2b2;
+  -webkit-box-shadow: -0.11rem 0.11rem 0.1rem #b2b2b2;
+          box-shadow: -0.11rem 0.11rem 0.1rem #b2b2b2;
   margin-bottom: 0.3rem;
   padding-bottom: 0.16rem;
   background: #f5f5f5;
@@ -834,42 +832,34 @@ button {
 }
 .footer li:nth-child(1).active .icon{
   background-image: url('../images/1r.png');
-  -webkit-background-size: 0.48rem 0.48rem;
   background-size: 0.48rem 0.48rem;
 }
 .footer li:nth-child(1) .icon{
   background-image: url('../images/1h.png');
-  -webkit-background-size: 0.48rem 0.48rem;
   background-size: 0.48rem 0.48rem;
 }
 .footer li:nth-child(2).active .icon{
   background-image: url('../images/2r.png');
-  -webkit-background-size: 0.44rem 0.44rem;
   background-size: 0.44rem 0.44rem;
 }
 .footer li:nth-child(2) .icon{
   background-image: url('../images/2h.png');
-  -webkit-background-size: 0.44rem 0.44rem;
   background-size: 0.44rem 0.44rem;
 }
 .footer li:nth-child(3).active .icon{
   background-image: url('../images/3r.png');
-  -webkit-background-size: 0.43rem 0.45rem;
   background-size: 0.43rem 0.45rem;
 }
 .footer li:nth-child(3) .icon{
   background-image: url('../images/3h.png');
-  -webkit-background-size: 0.43rem 0.45rem;
   background-size: 0.43rem 0.45rem;
 }
 .footer li:nth-child(4).active .icon{
   background-image: url('../images/4r.png');
-  -webkit-background-size: 0.42rem 0.46rem;
   background-size: 0.42rem 0.46rem;
 }
 .footer li:nth-child(4) .icon{
   background-image: url('../images/4h.png');
-  -webkit-background-size: 0.42rem 0.46rem;
   background-size: 0.42rem 0.46rem;
 }
 .grcenter{
@@ -892,7 +882,8 @@ button {
   top: 0.2rem;
   background: #fff;
   border-radius: 0.16rem;
-  box-shadow: 0 0.08rem 0.1rem #cdcbc1;
+  -webkit-box-shadow: 0 0.08rem 0.1rem #cdcbc1;
+          box-shadow: 0 0.08rem 0.1rem #cdcbc1;
 }
 .grcenter .info .left{
   width: 1rem;
@@ -998,7 +989,6 @@ button {
 }
 .to_more{
   background-image: url('../images/morebg.png');
-  -webkit-background-size: 7.08rem 2.73rem;
   background-size: 7.08rem 2.73rem;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -1030,7 +1020,6 @@ button {
   margin: 0 auto;
   background-image: url('../images/jifen.png');
   background-repeat: no-repeat;
-  -webkit-background-size: 6.58rem 1.28rem;
   background-size: 6.58rem 1.28rem;
   position: relative;
 }
@@ -1065,7 +1054,6 @@ button {
   padding-left: 1.08rem;
   background-color: #fff;
   background-image: url('../images/ff1.png');
-  -webkit-background-size: 6.9rem 0.44rem;
   background-size: 6.9rem 0.44rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1078,7 +1066,9 @@ button {
   padding: 0.25rem 0.3rem 0.9rem;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     position: absolute;
     background: #f5f5f5
 }
@@ -1087,14 +1077,15 @@ button {
   height: 11.82rem;
   border-radius: 0.2rem;
   padding: 0.48rem 0.19rem 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .editcenter .edit .head{
   height: 1.12rem;
   border-bottom: 0.01rem solid #dadada;
   position: relative;
   background-image: url('../images/center.png');
-  -webkit-background-size: 0.74rem 0.74rem;
   background-size: 0.74rem 0.74rem;
   background-repeat: no-repeat; 
   background-position:  right 0.24rem;
@@ -1202,7 +1193,9 @@ button {
   padding: 0.2rem;
   line-height: 0.4rem;
   font-size: 0.26rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   color: #000;
 }
 .editcenter .edit input::-webkit-input-placeholder {
@@ -1361,7 +1354,6 @@ button {
   width: 0.47rem;
   height: 0.46rem;
   background-image: url('../images/rili.png');
-  -webkit-background-size: 0.47rem 0.46rem;
   background-size: 0.47rem 0.46rem;
   float: right;
   margin-top: 0.32rem;
@@ -1496,7 +1488,8 @@ button {
   float: left;
   margin: 0.1rem 0.15rem;
   border-radius: 0.06rem;
-  box-shadow: 0 0 0.1rem 0.04rem #eee;
+  -webkit-box-shadow: 0 0 0.1rem 0.04rem #eee;
+          box-shadow: 0 0 0.1rem 0.04rem #eee;
 }
 .renwudisplay li .title{
   height: 0.62rem;
@@ -1557,21 +1550,18 @@ button {
 #service{
   background-image: url('../images/xiaoshou.png');
   background-repeat: no-repeat;
-  -webkit-background-size: 0.31rem 0.27rem;
   background-size: 0.31rem 0.27rem;
   background-position: 6.9rem center;
 }
 #goods{
   background-image: url('../images/dachui.png');
   background-repeat: no-repeat;
-  -webkit-background-size: 0.33rem 0.33rem;
   background-size: 0.33rem 0.33rem;
   background-position: 6.9rem center;
 }
 #ticket{
   background-image: url('../images/xiaoben.png');
   background-repeat: no-repeat;
-  -webkit-background-size: 0.32rem 0.36rem;
   background-size: 0.32rem 0.36rem;
   background-position: 6.9rem center;
 }
@@ -1596,7 +1586,8 @@ button {
   margin-right: 0.42rem;
   background: #fff;
   border-radius: 0.2rem;
-  box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+  -webkit-box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+          box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
 }
 .pingtai_list ul li img{
   display: block;
@@ -1619,9 +1610,12 @@ button {
   width: 6.9rem;
   padding: 0.39rem 0.2rem 0.57rem;
   border-radius: 0.2rem;
-  box-shadow: 0 0 0.1rem 0.04rem #eee;
+  -webkit-box-shadow: 0 0 0.1rem 0.04rem #eee;
+          box-shadow: 0 0 0.1rem 0.04rem #eee;
   margin: 0.3rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #tongzhi .detail{
   width: auto;
@@ -1632,7 +1626,9 @@ button {
   /* border-radius: 0.2rem; */
   /* box-shadow: 0 0 0.1rem 0.04rem #eee; */
   /* margin: 0.3rem; */
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .tongzhixq .title{
   font-size: 0.28rem;
@@ -1680,7 +1676,9 @@ button {
 .tongzhixq .ser_obj{
   position: relative;
   padding-top: 0.15rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 0.2rem;
   border-bottom: 0.12rem solid #e3e1e0;
 }
@@ -1741,7 +1739,9 @@ button {
   margin-left: 0.48rem;
   position: relative;
   padding-top: 0.08rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .tongzhixq .wupinjiehshao .xq span{
   font-weight: bold;
@@ -1787,7 +1787,6 @@ button {
   margin: 6.6rem 0 0 1.1rem;
   padding-top: 0.6rem;
   background-image: url('../images/duihuanbg.png');
-  -webkit-background-size: 5.18rem 6.5rem;
   background-size: 5.18rem 6.5rem;
   background-repeat: no-repeat;
 }
@@ -1841,7 +1840,6 @@ button {
   height: 1.22rem;
   padding-top: 0.38rem;
   background-image: url('../images/tab.png');
-  -webkit-background-size: 7.5rem 1.22rem;
   background-size: 7.5rem 1.22rem;
   background-repeat: no-repeat;
   background-position: 0 0.38rem;
@@ -1865,14 +1863,16 @@ button {
   width: 6.9rem;
   height: 1.7rem;
   border-radius: 0.16rem;
-  box-shadow: 0 0 0.3rem #aaa;
+  -webkit-box-shadow: 0 0 0.3rem #aaa;
+          box-shadow: 0 0 0.3rem #aaa;
   margin: 0 auto 0.48rem;
   position: relative;
   font-size: 0.24rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0.28rem 0.22rem;
   background-image: url('../images/gaosimohu.png');
-  -webkit-background-size: 6.9rem 1.7rem;
   background-size: 6.9rem 1.7rem;
   background-repeat: no-repeat;
 }
@@ -1890,7 +1890,6 @@ button {
   bottom: 0.1rem;
   line-height: 0.7rem;
   background-image: url('../images/fabufj.png');
-  -webkit-background-size: 0.41rem 0.4rem;
   background-size: 0.41rem 0.4rem;
   background-repeat: no-repeat;
   background-position: 0.3rem 0.14rem;
@@ -1899,7 +1898,9 @@ button {
 .fabuye .fabulan .fabunew a{
   display: block;
   padding-left: 0.92rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 0.7rem;
 }
 .fabuye .fabulist{
@@ -1909,7 +1910,8 @@ button {
 .fabuye .fabulist li{
   height: 1.7rem;
   border-radius: 0.16rem;
-  box-shadow: 0 0 0.3rem #aaa;
+  -webkit-box-shadow: 0 0 0.3rem #aaa;
+          box-shadow: 0 0 0.3rem #aaa;
   position: relative;
   font-size: 0.24rem;
   margin-bottom: 0.2rem;
@@ -1983,7 +1985,9 @@ button {
   margin: 0 auto;
   background: #fff;
   border-radius: 0.06rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 0.4rem;
   color: #000;
   font-size: 0.24rem;
@@ -1998,7 +2002,9 @@ button {
   display: block;
   background: #fff;
   border-radius: 0.06rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0.2rem 0.4rem;
   color: #000;
   font-size: 0.24rem;
@@ -2082,9 +2088,10 @@ button {
   z-index: 8;
   color: #808080;
   padding-left: 0.76rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url('../images/camera.png');
-  -webkit-background-size: 0.46rem 0.4rem;
   background-size: 0.46rem 0.4rem;
   background-repeat: no-repeat;
   background-position: 0.2rem 0.06rem;
@@ -2113,7 +2120,8 @@ button {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 .mobileSelect .grayLayer {
   position: fixed;
@@ -2228,7 +2236,8 @@ button {
   top: 80px;
   pointer-events: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   border-top: 1px solid #DCDCDC;
   border-bottom: 1px solid #DCDCDC;
 }
@@ -2238,7 +2247,6 @@ button {
   width: 100%;
   height: 200px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(rgba(255, 255, 255, 0)), to(#ffffff));
-  background: -webkit-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0), #ffffff);
   background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0), #ffffff);
   opacity: 0.9;
   pointer-events: none;
@@ -2389,8 +2397,10 @@ button {
   width: 40px;
   height: 40px;
   background: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  -webkit-transition: background .2s linear;
   transition: background .2s linear;
 }
 
@@ -2535,8 +2545,7 @@ button {
   background: #fff;
   border-left: 0.04rem solid #ff3236;
   margin: 0.3rem auto 0;
-  padding: 0 0.35rem;
-  -moz-box-shadow:-0.04rem -0.04rem 0.04rem #999 inset;             /* For Firefox3.6+ */
+  padding: 0 0.35rem;             /* For Firefox3.6+ */
   -webkit-box-shadow:-0.04rem -0.04rem 0.04rem #999 inset;          /* For Chrome5+, Safari5+ */
   box-shadow:-0.04rem -0.04rem 0.04rem #999 inset;     
 }
@@ -2640,15 +2649,14 @@ button {
   width: 100%;
   min-height: 100%;
   background-image: url('../images/dlzcbg.png');
-  -webkit-background-size: 7.5rem 14.75rem;
   background-size: 7.5rem 14.75rem;
   background-repeat: no-repeat;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 4.43rem;
   padding-bottom: 1rem;
    -webkit-transition: paddingBottom .5s;
-  -o-transition: paddingBottom .5s;
-  -moz-transition: paddingBottom .5s;
   transition: paddingBottom .5s; 
 }
 .dlzcbox .dlzcbtn{
@@ -2673,7 +2681,6 @@ button {
 }
 .dlzcbox .dlzcbtn a.active{
   background-image: url('../images/xiaosanjieao.png');
-  -webkit-background-size: 0.41rem 0.06rem;
   background-size: 0.41rem 0.06rem;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -2703,7 +2710,9 @@ button {
   border-radius: 0.08rem;
   margin: 0 auto;
   padding-left: 0.37rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 0.24rem;
 }
 .dlzcbox  .btn{
@@ -2715,10 +2724,8 @@ button {
   color: #fff;
   border-radius: 0.08rem;
   font-family: SimHei;
-  margin: 1.05rem auto 0;
-  background: -webkit-linear-gradient(left, #f6615b  , #fead51); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(right, #f6615b  , #fead51); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(right, #f6615b  , #fead51); /* Firefox 3.6 - 15 */
+  margin: 1.05rem auto 0; /* Safari 5.1 - 6.0 */ /* Opera 11.1 - 12.0 */ /* Firefox 3.6 - 15 */
+  background: -webkit-gradient(linear, left top, right top, from(#f6615b)  , to(#fead51));
   background: linear-gradient(to right, #f6615b  , #fead51); /* 标准的语法 */
 }
 .dlzcbox .tanchu{
@@ -2728,8 +2735,6 @@ button {
   bottom: 0;
   display: none;
   -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -moz-transition: all .5s;
   transition: all .5s; 
 }
 .dlzcbox .tanchu.active{
@@ -2780,18 +2785,13 @@ button {
   width: 0.12rem;
   height: 0.22rem;
   background-image: url('../images/anniu.png');
-  -webkit-background-size: 0.12rem 0.22rem;
   background-size: 0.12rem 0.22rem;
   background-repeat: no-repeat;
   -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  -moz-transition: all .5s;
   transition: all .5s; 
 }
 .dlzcbox .tanchu .gundong .shaixuan p i.active{
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .dlzcbox .tanchu .gundong .list{
@@ -2821,7 +2821,6 @@ button {
   margin: 0.56rem auto 0.8rem;
   border: 0.02rem solid #fbc46f;
   background-image: url('../images/dacamera.png');
-  -webkit-background-size: 1.84rem 1.5rem;
   background-size: 1.84rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center 0.4rem;
@@ -2905,8 +2904,15 @@ button {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .r_form .flex .radius{
   width: 3.16rem;
@@ -2947,7 +2953,9 @@ button {
 .r_form .form .inp input{
   display: block;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 0.6rem;
   border: 0.02rem solid #dcdcdc;
   border-radius: 0.04rem;
@@ -2973,7 +2981,9 @@ color: #aeaeae;
 .r_form .form .inp .val{
   display: block;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 0.6rem;
   line-height: 0.6rem;
   border: 0.02rem solid #dcdcdc;
@@ -3000,7 +3010,6 @@ color: #aeaeae;
   background-color: #dd302e;
   background-image: url('../images/sure.png');
   background-repeat: no-repeat;
-  -webkit-background-size: 0.2rem 0.16rem;
   background-size: 0.2rem 0.16rem;
   background-position: center center;
 } 
@@ -3048,7 +3057,6 @@ color: #aeaeae;
   height: 0.82rem;
   background-image: url('../images/no.png');
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 .select_org .close .really{
@@ -3071,8 +3079,15 @@ color: #aeaeae;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   line-height: 0.58rem;
 }
 .select_org .box .item span{
@@ -3087,9 +3102,12 @@ color: #aeaeae;
   border-radius: 0.04rem;
   padding-left: 0.18rem;
   padding-right: 0.38rem;
-  appearance: none;
-
-　-webkit-appearance: none;   /*除chrome浏览器的默认下拉图片*/
-
-　-moz-appearance: none; 
+  background-image: url('../images/dxj.png');
+  -webkit-background-size: 0.22rem 0.15rem;
+  background-size: 0.22rem 0.15rem;
+  background-repeat: no-repeat;
+  background-position: 4.44rem center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
