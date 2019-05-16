@@ -2,7 +2,7 @@
 * @Author: huangdeyaosi
 * @Date:   2018-01-26 09:09:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-05-16 13:32:05
+* @Last Modified time: 2019-05-16 13:43:25
 */
 @charset "UTF-8";
 body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, button, input, textarea, th, td, p {
@@ -1160,6 +1160,7 @@ button {
 }
 .editcenter .edit .sex .radio input{
   margin: 0 0.38rem;
+  vertical-align: middle;
 }
 .editcenter .edit .zuzhi{
   height: 0.9rem;
